@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Connexion.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.login-content {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    height: 650px;
+    background-color: #161616;
+    border-radius: 30px;
+}
+
+.login-content img {
+    width: auto;
+    height: 650px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.login-form {
+    margin: 50px auto;
+    width: 388px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-top: 45px;
+}
+
+.form-group2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-group2 label {
+    width: 50%;
+}
+
+.form-group2 button {
+    width: 50%;
+}
+
+.form-group input {
+    margin: 20px 0;
+    color:#37DD00;
+}
+
+.mdp{
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #d9d9d9;
+}
+
+#mdp:hover {
+    color: #37DD00;
+}
+.btn-inscription {
+    text-decoration: underline;
+    color : #37DD00;
+}
+
+label {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #d9d9d9;
+}
+
+input {
+    width: 384px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px white;
+    transition: border-bottom-color 1s ease-in-out;
+    color:#37DD00;
+}
+
+
+input:hover {
+    border-bottom: solid 2px #37DD00;
+}
+
+button {
+    width: 388px;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+p {
+    color: red;
+    font-weight: bold;
+}
+
+.flash-message {
+    background-color: #37DD00;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}

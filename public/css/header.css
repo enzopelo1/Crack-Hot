@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 4%;
+}
+
+.header-content1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.header-content2 {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+    width: max-content;
+}
+
+.logo {
+    height: 50px !important;
+    width: max-content !important;
+}
+
+#settingsIcon {
+    transition: opacity 1s ease, transform 0.5s ease-in-out;
+}
+
+#settingsIcon.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.parametre:hover {
+    cursor: pointer;
+    transform: rotate(180deg);
+    }
+
+.btn.btn-primary {
+    background-color: #37DD00;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 50px;
+}
+
+    
+/* Styles pour les téléphones */
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-content1, .header-content1demi, .header-content2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header-content1 p {
+        font-size: 20px;
+    }
+
+    .header-content1 a img, .header-content1demi a img, .header-content2 a img {
+        width: 50px;
+        height: 50px;
+    }
+}

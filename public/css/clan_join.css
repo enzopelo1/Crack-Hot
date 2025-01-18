@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Connexion.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.subscribe-content {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    height: 650px;
+    background-color: #161616;
+    border-radius: 30px;
+}
+
+.subscribe-content img {
+    width: auto;
+    height: 650px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.subscribe-form {
+    margin: 40px auto;
+    width: 388px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.form-group {
+    margin-top: 15px;
+}
+
+.form-group input {
+    margin: 15px 0;
+}
+
+.se_connecter {
+    text-decoration: underline;
+    color: #37DD00;
+}
+
+label {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #d9d9d9;
+}
+
+input {
+    width: 384px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px white;
+    transition: border-bottom-color 1s ease-in-out;
+    color: #37DD00;
+}
+
+input:hover {
+    border-bottom: solid 2px #37DD00;
+}
+
+button {
+    width: 388px;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+
+a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.flash-message {
+    background-color: #37DD00;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre la popup */
+    background-color: #1F1F1F;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001; /* S'assurer qu'elle est au-dessus de tout autre contenu */
+    width: 300px; /* Ajustez la largeur de la popup */
+    max-width: 80%;
+}
+
+/* Styles pour le bouton de fermeture de la popup */
+.popup button {
+    margin-top: 20px;
+    background-color: #37DD00;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; /* S'assure que le bouton prend toute la largeur disponible dans la popup */
+    box-sizing: border-box; /* Garantit que le padding est inclus dans la largeur totale */
+}
+
+/* Fond d'écran d'overlay qui couvre tout l'écran */
+.popup-background {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* Sous la popup mais au-dessus du contenu */
+}

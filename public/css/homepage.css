@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Accueil.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.home-container {
+    margin: 250px 12%;
+}
+
+h2 {
+    font-size: 50px;
+    color: #37DD00;
+}
+
+p {
+    font-size: 26px;
+    width: 60%;
+}
+
+.btn.btn-primary {
+    background-color: #37DD00;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+}
+
+.popup {
+    position: fixed;
+    top: -15%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.popup-content h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    width: 100%;
+}
+
+.popup-content button {
+    background-color: #37DD00;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.popup-content button:hover {
+    background-color: #2EB800;
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-content1, .header-content1demi, .header-content2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .header-content1 p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+    .header-content1 p {
+        font-size: 22px;
+    }
+
+    img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Petits écrans d'ordinateurs portables (max-width: 1024px) */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 2%;
+    }
+
+    .header-content1 p {
+        font-size: 26px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}

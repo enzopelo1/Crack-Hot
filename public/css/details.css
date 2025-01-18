@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Connexion.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.profile-container {
+    
+        display: flex;
+        justify-content: flex-start; /* Align items to the start (left) */
+        align-items: center;
+        margin: 32px 120px;
+        height: 72px;
+    
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.stats-overview {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.stat h2 {
+    color: #37DD00;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.stat p {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+}
+
+.stat span {
+    color: #37DD00;
+}
+
+
+
+.score-container {
+    background-color: rgba(0, 0, 0, 0.3); /* Fond noir transparent à 30% */
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between; /* Positionne les éléments à gauche et à droite */
+    align-items: center;
+    margin: 20px auto; /* Centre horizontalement et ajoute une marge verticale */
+    max-width: 80%; /* Limite la largeur totale */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ajoute une ombre douce pour un effet 3D */
+}
+
+.scores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes */
+    gap: 20px;
+    width: 50%; /* Limite la largeur des cercles à 50% de la carte */
+}
+
+.global-score {
+    width: 45%; /* Ajuste la largeur pour occuper la partie droite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.circle-score {
+    width: 100px;
+    height: 100px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column; /* Organise les éléments verticalement */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px; /* Ajoute de l'espace entre les cercles */
+    text-align: center;
+}
+
+
+
+.circle-score .score {
+    position: absolute; /* Garde la note au centre du cercle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrage parfait */
+    font-size: 16px;
+    font-weight: bold;
+    color: #37DD00; /* Couleur du score */
+}
+
+.circle-score .label {
+    margin-top: 130px; /* Place l'étiquette sous le cercle */
+    font-size: 14px; /* Taille de police de l'étiquette */
+    color: white; /* Couleur de l'étiquette */
+}
+
+.circle-score:nth-child(1) { border-color: #37DD00; }
+.circle-score:nth-child(2) { border-color: #1AB800; }
+.circle-score:nth-child(3) { border-color: #145C00; }
+.circle-score:nth-child(4) { border-color: #5D5DFF; }
+.circle-score:nth-child(5) { border-color: #6633FF; }
+.circle-score:nth-child(6) { border-color: #9D00FF; }
+
+
+.global-score {
+    width: 35%; /* Ajuster la largeur pour occuper la partie droite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-chart {
+    background-color: rgba(55, 221, 0, 0.2);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.circle-chart span {
+    font-size: 24px;
+    color: #37DD00;
+}
+
+.username-container {
+    background-color: rgba(0, 0, 0, 0.3); /* Noir avec opacité de 70% */
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center; /* Centrer le pseudo horizontalement */
+    align-items: center;
+    margin: 20px auto; /* Centrer le cadre et ajouter des marges en haut et en bas */
+    max-width: 80%; /* Limiter la largeur maximale à 80% de la page */
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre les éléments */
+    margin: 0 auto; /* Centrer le conteneur */
+    max-width: 80%;
+}
+
+.stat-item {
+    background-color: rgba(0, 0, 0, 0.3); /* Noir avec opacité de 70% */
+    padding: 30px 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stat-item .response {
+    color: #37DD00; /* Vert */
+    margin-top: 5px; /* Espace entre le texte et la réponse */
+    text-align: center; /* Centrer le texte */
+}
+
+
+.back-button {
+    display: inline-block;
+    background-color: #37DD00;
+    color: white;
+    border-radius: 25%;
+    padding: 10px;
+    text-align: center;
+    margin-right: auto;
+}
+
+.back-button:hover {
+    background-color: darkgreen;
+}
+
+.back-button svg {
+    fill: white;
+}
+
+.username-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.retour-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.total-score {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}

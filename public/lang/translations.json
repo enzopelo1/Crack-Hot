@@ -1,0 +1,18 @@
+{
+    "fr": {
+        "mentions_legales": "Mentions légales",
+        "politique_confidentialite": "Politique de confidentialité",
+        "cgu": "Conditions générales d'utilisation",
+        "langue": "Langue",
+        "francais": "Français",
+        "anglais": "English"
+    },
+    "en": {
+        "mentions_legales": "Legal Mentions",
+        "politique_confidentialite": "Privacy Policy",
+        "cgu": "Terms of Use",
+        "langue": "Language",
+        "francais": "French",
+        "anglais": "English"
+    }
+}

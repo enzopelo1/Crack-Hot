@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Connexion.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.form h1 {
+    text-align: left; /* Align text to the left */
+    font-size: 250%;
+    margin-top: 0px;
+    margin-bottom: 5px; /* Reduce the bottom margin */
+}
+
+.progress-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center;
+    margin: 32px 120px;
+    height: 72px;
+}
+
+.left-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(31, 31, 31, 0.45);
+    padding: 2px 28px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.right-container {
+    width: 200px;
+    background-color: #37DD00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.right-container img.classment-image {
+    width: 80px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
+.solo-text {
+    text-align: left; /* Align text to the left */
+    font-size: 150%; /* Adjust font size as needed */
+    margin-top: -20px; /* Remove top margin */
+    margin-bottom: 0px; /* Remove bottom margin */
+    color: #37DD00;
+}
+
+.icons-container {
+    display: flex;
+    gap: 10px; /* Add some space between the icons */
+    align-items: center; /* Center icons vertically */
+    transform: rotate(0deg); /* Initial rotation */
+}
+
+.icons-container img:hover {
+    transform: rotate(5deg); /* Rotate the icon on hover */
+}
+
+
+.icons-container img {
+    width: 50px; /* Adjust the size of the icons as needed */
+    height: 50px;
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+    transition: opacity 0.3s; /* Smooth transition for opacity change */
+}
+
+.table-container {
+    margin: 20px 120px;
+    padding: 0;
+    max-width: 1658px; /* Ajuster selon vos besoins */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: white;
+    background-color: rgba(31, 31, 31, 0.8); /* Fond semi-transparent */
+    border-radius: 10px;
+    overflow: hidden; /* Pour arrondir les coins */
+}
+
+thead {
+    background-color: #1F1F1F; 
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #37DD00;
+
+}
+
+thead th {
+    padding: 10px 15px;
+    color: white; /* Texte noir pour le contraste */
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Ligne alternée */
+}
+
+tbody tr:hover {
+    background-color: rgba(55, 221, 0, 0.2); /* Couleur survol */
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+tbody td:first-child {
+    text-align: center; /* Centrer la position */
+    font-weight: bold;
+}
+
+tbody td:nth-child(3) {
+    text-align: center; /* Centrer les âges */
+}
+
+tbody td:last-child {
+    text-align: center; /* Centrer les scores */
+}
+
+
+/* Ajouter ce code dans clan.css */
+
+.highlight-clan {
+    color: #37DD00; /* Mettre le texte en vert pour le clan actuel */
+}
+
+/* Icône "Quitter le Clan" */
+.quit-clan-btn {
+    cursor: pointer;
+    width: 30px; /* Ajustez la taille de l'image */
+    height: 30px;
+    transition: opacity 0.3s ease; /* Animation de l'icône */
+    
+}
+
+.quit-clan-btn:hover {
+    opacity: 0.7; /* Légère transparence lors du survol */
+}
+
+/* Popup de confirmation */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #1F1F1F;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.popup-content button {
+    background-color: #37DD00;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-content button:hover {
+    background-color: #28a600;
+}
+
+.loupe-icon {
+    width: 20px; /* Adjust the size of the loupe icon as needed */
+    height: 20px;
+    cursor: pointer;
+    margin-left: 5px; /* Add some space between the pseudo and the icon */
+}
+

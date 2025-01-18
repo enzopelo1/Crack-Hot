@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/Connexion.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    margin: 32px 120px;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 200%;
+    margin: 0;
+    color: white;
+}
+
+.highlight-clan {
+    color: #37DD00; /* Couleur verte pour le nom du clan */
+}
+
+.clan-details-container {
+    margin: 20px 120px;
+    padding: 0;
+    max-width: 1658px; /* Ajuster cette valeur pour correspondre à la table des clans */
+    width: 100%;
+    margin: 0 auto; /* Centrer le tableau */
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    max-width: 83%; /* Ajuster cette valeur pour limiter la largeur du tableau */
+    margin: 0 auto; /* Centrer le tableau */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(31, 31, 31, 0.8); /* Fond semi-transparent */
+    border-radius: 10px;
+    overflow: hidden; /* Coins arrondis */
+    color: white;
+}
+
+thead {
+    background-color: #1F1F1F;
+    font-size: 18px;
+    border-bottom: 2px solid #37DD00;
+}
+
+thead th {
+    padding: 10px 15px;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* Couleur des lignes alternées */
+}
+
+tbody tr:hover {
+    background-color: rgba(55, 221, 0, 0.2); /* Couleur au survol */
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+tbody td:first-child {
+    font-weight: bold;
+}
+
+.loupe-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.loupe-icon:hover {
+    transform: scale(1.2);
+}
+
+.quit-clan-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quit-clan-btn {
+    background-color: #37DD00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quit-clan-btn:hover {
+    background-color: #28a600;
+}
+
+
+.progress-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left) */
+    align-items: center;
+    margin: 32px 120px;
+    height: 72px;
+}
+
+.left-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(31, 31, 31, 0.45);
+    padding: 2px 28px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2%;
+}
+
+.right-container {
+    width: 200px;
+    background-color: #37DD00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 109px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.right-container img.classment-image {
+    width: 80px; /* Ajustez la largeur selon vos besoins */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+
+.solo-text {
+    text-align: left; /* Align text to the left */
+    font-size: 150%; /* Adjust font size as needed */
+    margin-top: -20px; /* Remove top margin */
+    margin-bottom: 0px; /* Remove bottom margin */
+    color: #37DD00;
+    padding-left: 26%;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #37DD00;
+    color: white;
+    border-radius: 25%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.back-button:hover {
+    background-color: darkgreen;
+}
+
+.back-button svg {
+    fill: white;
+}
+
+.back-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.titre-nav {
+    font-size: 150%;
+}
+

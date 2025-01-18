@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    background-image: url('../img/Image\ de\ fond.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.form {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(22, 22, 22, 0.47);
+    
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 350%;
+}
+
+.form-global {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.form p, .form ul {
+    font-size: 200%;
+    color: white;
+}
+
+.form-2 {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3D3D3D;
+}
+
+.sous-titre {
+    text-align: center;
+    color: white;
+}
+
+.form .sous-titre {
+    font-size: 150%;
+
+}
+
+.img-mentions {
+    width: 150px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin: 20px auto; /* Centre l'image horizontalement */
+    display: block; /* Assure que l'image est un bloc pour le centrage */
+}
+.title {
+    text-align: center;
+    font-size: 100%;
+}
+
+.form3 {
+    text-align: center;
+}
+.sous-texte {
+    display: inline-block; /* Permet au cadre de s'ajuster au texte */
+    margin-top: 20px; /* Ajoute un espacement entre le titre et le texte */
+    padding: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgba(22, 22, 22, 0.47);
+    font-size: 80%;
+    text-align: center; /* Centre le texte à l'intérieur */
+    margin: 0; /* Retirez les marges externes pour un alignement parfait */
+    color: white;
+    
+}
+
+.toggle-arrow {
+    color: white; /* Couleur de la flèche */
+    font-size: 16px; /* Taille ajustée pour la cohérence */
+    cursor: pointer; /* Indique que c'est cliquable */
+    margin-left: 10px; /* Espace entre le texte et la flèche */
+    vertical-align: middle; /* Aligne avec le texte */
+    display: inline-block; /* Traité comme un élément inline */
+    transition: transform 0.3s ease; /* Animation pour la rotation */
+}
+
+.toggle-arrow.rotate {
+    transform: rotate(180deg); /* Tourne la flèche */
+}
+
+.hidden-content {
+    display: none; /* Masqué par défaut */
+    background-color: rgba(22, 22, 22, 0.47); /* Même fond que le premier cadre */
+    padding: 10px 20px; /* Ajuste les marges internes */
+    font-size: 100%; /* Même taille que le texte initial */
+    text-align: center; /* Aligné au centre */
+    border-radius: 10px; /* Coins arrondis */
+    border-top-width: 0px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+
+
+}
+
+.hidden-content p {
+    color: white;
+    font-size: 100%;
+    border-top-width: 0px;
+
+
+}
+
+.hidden-content {
+    display: none; /* Masqué par défaut */
+    background-color: rgba(22, 22, 22, 0.47); /* Même fond que le premier cadre */
+    padding: 10px; /* Ajustez les marges internes */
+    font-size: 100%; /* Même taille que le texte initial */
+    color: white; /* Texte blanc */
+    text-align: center; /* Aligné au centre */
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Jointure visuelle avec le cadre initial */
+    max-width: 100%; /* Limite à la largeur du conteneur parent */
+    margin: 0 auto; /* Centre horizontalement */
+}
+
+/* Media Queries pour les écrans plus petits */
+@media (max-width: 600px) {
+    .image-item {
+        flex: 1 1 100%; /* Les images prennent 100% de la largeur du conteneur sur les petits écrans */
+        max-width: 100%;
+    }
+}

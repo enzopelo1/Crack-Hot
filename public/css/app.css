@@ -1,0 +1,64 @@
+.white-mode {
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.white-mode .sidenav {
+    background-color: #d9d9d9;
+}
+
+.white-mode .sidenav a {
+    color: #161616;
+}
+
+.white-mode .sidenav a:hover, .white-mode .sidenav a.active {
+    color: #1e7900;
+}
+
+/* Additional styles for day mode */
+.white-mode header {
+    color: black;
+}
+
+.white-mode .header-content1 p {
+    color: black;
+}
+
+.white-mode .login-container,
+.white-mode .subscribe-container {
+    color: black;
+}
+
+.white-mode .login-content,
+.white-mode .subscribe-content {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+.white-mode .login-content img,
+.white-mode .subscribe-content img {
+    filter: invert(1);
+}
+
+.white-mode .login-form input,
+.white-mode .subscribe-form input {
+    border-bottom: solid 2px black;
+    color: black;
+}
+
+.white-mode .login-form label,
+.white-mode .subscribe-form label {
+    color: black;
+}
+
+.white-mode .login-form button,
+.white-mode .subscribe-form button {
+    background-color: black;
+    color: white;
+}
+
+.white-mode .login-form a,
+.white-mode .subscribe-form a {
+    color: black;
+}
+
